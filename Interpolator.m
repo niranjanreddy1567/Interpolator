@@ -120,3 +120,14 @@ plot(t_rk, x_rk);
 title('Reconstructed signal x_r(t)');
 xlabel('Time');
 ylabel('Amplitude');
+
+% Comparing Original signal and Reconstructed signal
+
+figure
+plot(t,X_c)
+hold on
+plot(t_rk, x_rk,'Color','m');
+xlabel('Time(t)')
+ylabel('Amplitude')
+title('Comparing original signal and Reconstructed signal')
+legend('Original signal X_c(t)','Reconstructed signal X_r(t)')
