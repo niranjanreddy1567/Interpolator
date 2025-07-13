@@ -115,6 +115,7 @@ x_rk = conv(x_bar, h_rt, 'same');  % Reconstructed signal
 t_rk = linspace(0, Tmax, length(x_rk));  % time interval for signal x_r_k
 
 figure;
+
 plot(t_rk, x_rk);
 title('Reconstructed signal x_r(t)');
 xlabel('Time');
